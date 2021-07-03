@@ -1,37 +1,43 @@
 <?php
-$short = '//Enter Any Month Name Here//';
+$short = '//Enter Your Month//';
 switch  ($short) {
 case 'january':
-    echo 'Short Form of january is : jan';
+case 'January':
+case 'JANUARY':
+    echo  ''."$short". ' Short Form is => Jan';
     break;
-    case 'January':
-    echo 'Short Form of January is : Jan';
-    break;
-    case 'JANUARY':
-    echo 'Short From of JANUARY is : JAN';
-    break;
+    
+case 'February':
 case 'february':
-    echo 'Short Form of february is : feb';
-        break;
-    case 'February':
-        echo 'Short Form of February is : Feb ';
-            break;
-    case 'FEBRUARY':
-        echo 'Short From of FEBRUARY is : FEB';
-            break;
-        
-    case 'march':
-        echo 'Short From of march is : mar';
-        break;
-    case 'March':
-        echo 'Short Form of march is : Mar';
-        break;
-    case 'MARCH':
-        echo 'Short Form of MARCH is : MAR';
-        break;
-            
-            default:
-                  echo 'This is not a month name or you have spelling mistake';
-}
+case 'FEBRUARY':
+    echo ''."$short". ' Short Form is => Feb';
+    break;
 
-?>
+case 'March':
+    case 'march':
+        case 'MARCH':
+            echo ''."$short". ' Short Form is => Mar';
+            break;
+
+case 'April':
+    case 'april':
+        case 'APRIL':
+            echo ''."$short".' Short From is => Apr';
+            break;
+            
+case 'May':
+    case 'MAY':
+        case 'may':
+            echo ''."$short".' Short Form is => May';
+            break;
+            
+case 'june':
+    case 'June':
+        case 'JUNE':
+              echo ''."$short". ' Short Form is => Jun';
+              break;
+              
+              default:
+                  echo 'Sorry we didn'."'".'t have enough data for your answer';
+             }
+    ?>
