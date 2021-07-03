@@ -32,6 +32,6 @@ case 'february':
             
             default:
                   echo 'This is not a month name or you have spelling mistake';
-
 }
 
+?>
